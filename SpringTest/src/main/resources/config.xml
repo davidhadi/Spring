@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.app.component.Employee" name="emp">
+        <property name="empId">
+            <value>101</value>
+        </property>
+
+        <property name="empName">
+            <value>Shakil</value>
+        </property>
+
+        <property name="empSalary">
+            <value>20000.00</value>
+        </property>
+
+
+    </bean>
+    <bean class="com.app.component.Student" name="std">
+        <property name="sId" value="102"/>
+        <property name="sName" value="Shakil"/>
+        <property name="sRoll" value="22"/>
+
+    </bean>
+
+
+    <bean class="com.app.component.Alian" name="ali">
+        <property name="alList">
+            <list>
+                <value>Ahsan</value>
+                <value>Shakil</value>
+                <value>David</value>
+                <value>Mahtab</value>
+            </list>
+        </property>
+
+        <property name="alSet">
+            <set>
+                <value>Ahsan</value>
+                <value>Shakil</value>
+                <value>David</value>
+                <value>Mahtab</value>
+            </set>
+        </property>
+
+        <property name="alMap">
+            <map>
+                <entry>
+                    <key>
+                        <value>aa</value>
+                    </key>
+                    <value>Shakil</value>
+                </entry>
+                <entry key="ab" value="David"/>
+                <entry key="ac">
+                    <value>Hadi</value>
+                </entry>
+                <entry value="Ahsan">
+                    <key>
+                        <value>ad</value>
+                    </key>
+                </entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="key1">val1</prop>
+                <prop key="key1">val3</prop>
+                <prop key="key2">val2</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
